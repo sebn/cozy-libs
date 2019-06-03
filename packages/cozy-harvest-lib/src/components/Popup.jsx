@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
  * @return {Window}       Popup window
  */
 // source https://stackoverflow.com/a/16861050
-export function popupCenter(url, title, w, h) {
+export function popupCenter(w, h) {
   /* global screen */
   // Fixes dual-screen position
   //                      Most browsers      Firefox
@@ -31,18 +31,12 @@ export function popupCenter(url, title, w, h) {
   var left = width / 2 - w / 2 + dualScreenLeft
   var top = height / 2 - h / 2 + dualScreenTop
   // need to be set here to get from the OAuth opener
-  var newWindow = window.open(
-    '',
-    title,
-    `scrollbars=yes, width=${w}, height=${h}, top=${top}, left=${left}`
-  )
-  newWindow.location.href = url
-
-  // Puts focus on the newWindow
-  if (newWindow.focus) {
-    newWindow.focus()
+  return {
+    w,
+    h,
+    top,
+    left
   }
-  return newWindow
 }
 
 /**
@@ -68,10 +62,13 @@ export class Popup extends PureComponent {
   }
 
   handleMessage(messageEvent) {
-    const { popup } = this.state
+    // const { popup } = this.state
     const { onMessage } = this.props
-    const isFromPopup = popup.location.origin === messageEvent.origin
-    if (isFromPopup && typeof onMessage === 'function') onMessage(messageEvent)
+    console.log('this.newWindow', this.newWindow)
+    this.newWindow.close()
+    onMessage(messageEvent)
+    /*  const isFromPopup = popup.location.origin === messageEvent.origin
+    if (isFromPopup && typeof onMessage === 'function') onMessage(messageEvent) */
   }
 
   handleClose(popup) {
@@ -112,12 +109,45 @@ export class Popup extends PureComponent {
     window.removeEventListener('message', this.handleMessage)
   }
 
+  handleUrlChange = event => {
+    const { url } = event
+    const urlParsed = new URL(url)
+    const account = urlParsed.searchParams.get('account')
+    const state = urlParsed.searchParams.get('state')
+    if (account && state) {
+      const data = {
+        key: account,
+        oAuthStateKey: state
+      }
+      this.handleMessage({ data })
+    }
+  }
+
   showPopup() {
     const { height, width, title, url } = this.props
-    const popup = popupCenter(url, title, width, height)
-    this.addListeners(popup)
-    this.startMonitoringClosing(popup)
-    this.setState({ popup })
+    const { w, h, top, left } = popupCenter(width, height)
+    /**
+     * ATM we also use window.open on Native App in order to open
+     * InAppBrowser. But some provider (Google for instance) will
+     * block us. We need to use a SafariViewController or Chrome Custom Tab.
+     * So
+     */
+    this.newWindow = window.open(
+      url,
+      title,
+      `scrollbars=yes, width=${w}, height=${h}, top=${top}, left=${left}`
+    )
+    // Puts focus on the newWindow
+
+    this.newWindow.addEventListener('loadstart', this.handleUrlChange)
+
+    if (this.newWindow.focus) {
+      this.newWindow.focus()
+    }
+
+    this.addListeners(this.newWindow)
+    this.startMonitoringClosing(this.newWindow)
+    //this.setState({ newWindow })
   }
 
   render() {
