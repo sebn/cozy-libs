@@ -1,0 +1,14 @@
+{
+  "name": "cozy-procedures",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "env BABEL_ENV=transpilation yarn babel src/ --out-dir dist",
+    "example": "nf start",
+    "example-server": "env USE_REACT=true parcel --port 1234 $(pwd)/examples/index.html"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "babel-preset-cozy-app": "^1.5.1"
+  }
+}
