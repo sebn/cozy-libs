@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import Context from './redux/context'
 
 class ProcedurePage extends React.Component {
   render () {
@@ -15,4 +16,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(ProcedurePage)
+export default connect(mapStateToProps, null, null, { context: Context })(ProcedurePage)
