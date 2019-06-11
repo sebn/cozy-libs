@@ -1,3 +1,3 @@
-const A = () => { return "hi" }
+import Procedure from './Procedure'
 
-export default A
+export default Procedure
