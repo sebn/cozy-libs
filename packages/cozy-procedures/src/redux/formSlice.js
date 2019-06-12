@@ -1,5 +1,6 @@
 import { createSlice } from 'redux-starter-kit'
 import get from 'lodash/get'
+import set from 'lodash/set'
 
 const formSlice = createSlice({
   initialState: {
@@ -10,7 +11,7 @@ const formSlice = createSlice({
   },
   slice: 'form',
   reducers: {
-    init(state, action) {
+    init: (state, action) => {
       state.identity = get(action.payload, 'identity', []).reduce((acc, field) => {
         acc[field.id] = {
           value: undefined
@@ -22,9 +23,13 @@ const formSlice = createSlice({
 
       return state
     },
+    setValue: (state, action) => {
+      set(state, `${action.payload.section}.${action.payload.fieldId}`, action.payload.value)
+      return state
+    }
   }
 })
 
 const { actions, reducer } = formSlice
-export const { init } = actions
+export const { init, setValue } = actions
 export default reducer

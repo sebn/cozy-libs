@@ -1,18 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import IdentityInput from './IdentityInput'
+import get from 'lodash/get'
 import { connect } from 'react-redux'
 import Context from './redux/context'
 
 class ProcedurePage extends React.Component {
   render () {
-    console.log(this.props.reduxState)
-    return <div>page</div>
+    const { identityFields } = this.props
+    return <div>
+      {identityFields.map(field => (
+        <IdentityInput key={field.id} field={field} />
+      ))}
+    </div>
   }
 }
 
 const mapStateToProps = state => {
   return {
-    reduxState: state
+    identityFields: get(state, 'template.identity', [])
   }
 }
 
