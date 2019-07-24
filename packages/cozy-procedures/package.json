@@ -19,7 +19,7 @@
     "lint": "cd ..; yarn lint packages/cozy-procedures"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.4",
+    "@babel/runtime": "7.5.5",
     "babel-preset-cozy-app": "^1.6.0",
     "date-fns": "^1.30.1",
     "lodash": "4.17.15",
@@ -33,7 +33,7 @@
     "snarkdown": "^1.2.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.4",
+    "@babel/cli": "7.5.5",
     "@material-ui/core": "3.9.3",
     "@material-ui/lab": "^3.0.0-alpha.30",
     "babel-plugin-inline-react-svg": "^1.1.0",
