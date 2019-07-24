@@ -5465,47 +5465,13 @@ cozy-client-js@0.14.2:
     pouchdb-adapter-cordova-sqlite "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
     pouchdb-find "6.4.3"
 
-cozy-client@6.34.0:
-  version "6.34.0"
-  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.34.0.tgz#fcaac796f9689757c5b1f540e9d3b013f4c60f71"
-  integrity sha512-PmE4xeg9mtCWTlJjnTNO3NYzDbnuZADFA26KuMsihZEjgQZ/AQaVi0z+6julEEo10fTrRqQ+rWjYFMHUox2c0Q==
-  dependencies:
-    cozy-device-helper "1.6.3"
-    cozy-stack-client "^6.33.0"
-    lodash "4.17.11"
-    microee "0.0.6"
-    prop-types "15.6.2"
-    react "16.7.0"
-    react-redux "5.0.7"
-    redux "3.7.2"
-    redux-thunk "2.3.0"
-    sift "6.0.0"
-    url-search-params-polyfill "^6.0.0"
-
-cozy-client@6.46.0:
-  version "6.46.0"
-  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.46.0.tgz#2512541d65158e0c32e171eb7acbd1060475f46d"
-  integrity sha512-lmddGQ2LaHOB09Rq3q6/JVHBXQgYURmlTt5l6nGpAelZ5LBgEBEEqNQY4hgDajnVKEnGOlwgC58XcQ3d/6jvvg==
-  dependencies:
-    cozy-device-helper "1.6.3"
-    cozy-stack-client "^6.46.0"
-    lodash "4.17.11"
-    microee "0.0.6"
-    prop-types "15.6.2"
-    react "16.7.0"
-    react-redux "5.0.7"
-    redux "3.7.2"
-    redux-thunk "2.3.0"
-    sift "6.0.0"
-    url-search-params-polyfill "^6.0.0"
-
-cozy-client@6.54.0, cozy-client@^6.54.0:
-  version "6.54.0"
-  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.54.0.tgz#e553eb3fba7a93ce2ccd59b301c8403be3084328"
-  integrity sha512-/M2ErOlBoRj2R2rwxz8f17BtQvItGnBpuRsY6s7mAR6O7EYrq4FAbxmrwWEPdq+5p0SNHh3kmD/g7E8rY5JPag==
+cozy-client@6.55.0:
+  version "6.55.0"
+  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.55.0.tgz#ffc4277103e0a0a304cc68d0bed7347c00dabb64"
+  integrity sha512-N/loJqXGw0V0YvV++tPrJCw2Q4u+2Zga1dMp25+g/Oh85gOWa6v2WFo1izPH3FGf2rfetoWziv8gWz/jzjeUeA==
   dependencies:
     cozy-device-helper "1.7.3"
-    cozy-stack-client "^6.53.0"
+    cozy-stack-client "^6.55.0"
     lodash "4.17.14"
     microee "0.0.6"
     prop-types "15.6.2"
@@ -5515,29 +5481,6 @@ cozy-client@6.54.0, cozy-client@^6.54.0:
     redux-thunk "2.3.0"
     sift "6.0.0"
     url-search-params-polyfill "^6.0.0"
-
-cozy-client@^6.27.0:
-  version "6.27.0"
-  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.27.0.tgz#27cd1c9e1e6827f7fcc431f8ef1294056b4d3cd7"
-  integrity sha512-lKdWvKrBsBs8SimfvSqb3ExInH/pGA00GfZXr4Ki8bDV0Z/d/g7geQVUepIIpwyun+PqKaIQ/Fko5a1lYfx89Q==
-  dependencies:
-    cozy-device-helper "1.6.3"
-    cozy-stack-client "^6.25.0"
-    lodash "4.17.11"
-    microee "0.0.6"
-    prop-types "15.6.2"
-    react "16.7.0"
-    react-redux "5.0.7"
-    redux "3.7.2"
-    redux-thunk "2.3.0"
-    sift "6.0.0"
-
-cozy-device-helper@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/cozy-device-helper/-/cozy-device-helper-1.6.3.tgz#186cf0682921fa3ec7c2343d94fb84f317c992ba"
-  integrity sha512-fJIvGirPxF82B0kZVIrp4H6be9pidpnOSOljQZbp9HZfFT+nGQMcuwj6lUfZ8JS0EixsVPfAimIqS8qkMV+7rg==
-  dependencies:
-    lodash "4.17.11"
 
 cozy-device-helper@1.7.3:
   version "1.7.3"
@@ -5553,37 +5496,10 @@ cozy-realtime@3.1.0:
   dependencies:
     minilog "3.1.0"
 
-cozy-stack-client@^6.25.0:
-  version "6.25.0"
-  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-6.25.0.tgz#4fc50087d900be4b0976ceca3606c77703cf5f52"
-  integrity sha512-SY7450Yg9n9HDcPsMaNgfTcId5rXOR7hpzyCo1OUZoLINOGlG9Crd10p01aiOLSbvw8z1piKJnGyxYSSrmBOXA==
-  dependencies:
-    detect-node "2.0.4"
-    mime-types "2.1.24"
-    qs "6.7.0"
-
-cozy-stack-client@^6.33.0:
-  version "6.33.0"
-  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-6.33.0.tgz#62eca6b63f1d7202ae5032b28b47461be5e85199"
-  integrity sha512-7S8xPcd03BoEd/VFhBv/vxB/2P0U2SLK/wgFoLor7lPHJ00Al8q/pFFgDIb8r1eoK247augH/JrcDUGbSIhVQA==
-  dependencies:
-    detect-node "2.0.4"
-    mime-types "2.1.24"
-    qs "6.7.0"
-
-cozy-stack-client@^6.46.0:
-  version "6.46.0"
-  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-6.46.0.tgz#9f36a9bceb51254f9b4991babf0e9cc72973c968"
-  integrity sha512-2u1pSP9pzAbcpOW8QIX+oLh2BVw/39FGUnuEo4Uio0HTvFy0a5hiXEX3IuUr+cvcy4TUH0Hb16N8ESowle6CxA==
-  dependencies:
-    detect-node "2.0.4"
-    mime-types "2.1.24"
-    qs "6.7.0"
-
-cozy-stack-client@^6.53.0:
-  version "6.53.0"
-  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-6.53.0.tgz#875016620cbf35303e289a802410f57974093843"
-  integrity sha512-b4l3x5HsNbYFz0N90OMmEv0fnoWU6TGHVX7Ynvfdezq9hI2iu/CMdiqeAOnVMDvy/iaMaGi/JkoK3d+oOLlpRQ==
+cozy-stack-client@^6.55.0:
+  version "6.55.0"
+  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-6.55.0.tgz#8d77e377a6515180b19d5386078845f9ddd7609a"
+  integrity sha512-Ho611ECKLSROrmQ+gLetniU9C5nYP0vIjfMzhRGDWdHkDVrhM19dTjyNoSj9uNd64SrdNs182f8pi183g7TOfQ==
   dependencies:
     detect-node "2.0.4"
     mime "2.4.0"
@@ -11988,22 +11904,10 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
-mime-db@1.40.0:
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.40.0.tgz#a65057e998db090f732a68f6c276d387d4126c32"
-  integrity sha512-jYdeOMPy9vnxEqFRRo6ZvTZ8d9oPb+k18PKoYNYUe2stVEBPPwsln/qWzdbmaIvnhZ9v2P+CuecK+fpUfsV2mA==
-
 "mime-db@>= 1.38.0 < 2", mime-db@~1.38.0:
   version "1.38.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.38.0.tgz#1a2aab16da9eb167b49c6e4df2d9c68d63d8e2ad"
   integrity sha512-bqVioMFFzc2awcdJZIzR3HjZFX20QhilVS7hytkKrv7xFAn8bM1gzc/FOX2awLISvWe0PV8ptFKcon+wZ5qYkg==
-
-mime-types@2.1.24:
-  version "2.1.24"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.24.tgz#b6f8d0b3e951efb77dedeca194cff6d16f676f81"
-  integrity sha512-WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==
-  dependencies:
-    mime-db "1.40.0"
 
 mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.18, mime-types@~2.1.19:
   version "2.1.22"
