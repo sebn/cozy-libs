@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "jest-cli": "24.5.0",
-    "mjml": "4.3.1",
+    "mjml": "4.4.0",
     "shebang-loader": "0.0.1",
     "webpack": "4.29.6",
     "webpack-cli": "3.3.2"
