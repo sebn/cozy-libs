@@ -9,21 +9,21 @@
   },
   "dependencies": {
     "@material-ui/core": "3.9.3",
-    "@material-ui/lab": "^3.0.0-alpha.30",
+    "@material-ui/lab": "3.0.0-alpha.30",
     "cozy-authentication": "^1.17.0",
     "cozy-client": "6.54.0",
     "cozy-device-helper": "^1.7.5",
     "cozy-doctypes": "^1.57.0",
     "cozy-ui": "22.4.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.5.2",
-    "react-redux": "^7.0.3",
-    "react-router": "3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.0.3",
+    "react-router": "3.2.1",
     "redux": "3.7.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.4.5",
-    "babel-polyfill": "^6.26.0",
-    "parcel": "^1.12.3"
+    "@babel/runtime": "7.5.5",
+    "babel-polyfill": "6.26.0",
+    "parcel": "1.12.3"
   }
 }

@@ -32,6 +32,6 @@
     ]
   },
   "dependencies": {
-    "microee": "^0.0.6"
+    "microee": "0.0.6"
   }
 }

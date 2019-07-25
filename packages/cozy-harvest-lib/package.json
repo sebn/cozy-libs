@@ -26,15 +26,15 @@
     "watch:doc:react": "(cd ../.. && TARGET=cozy-harvest-lib yarn watch:doc:react)"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.2",
-    "date-fns": "^1.30.1",
+    "@babel/runtime": "7.5.5",
+    "date-fns": "1.30.1",
     "final-form": "4.11.1",
     "lodash": "4.17.15",
-    "microee": "^0.0.6",
-    "preact-portal": "^1.1.3",
+    "microee": "0.0.6",
+    "preact-portal": "1.1.3",
     "react-final-form": "3.7.0",
     "react-markdown": "4.0.8",
-    "uuid": "^3.3.2"
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -48,8 +48,8 @@
     "enzyme-adapter-react-16": "1.11.2",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.1.0",
-    "preact": "^8.4.2",
-    "preact-portal": "^1.1.3",
+    "preact": "8.4.2",
+    "preact-portal": "1.1.3",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6"
@@ -58,6 +58,6 @@
     "cozy-client": "6.46.0",
     "cozy-device-helper": "1.7.1",
     "cozy-realtime": "^3.1.0",
-    "cozy-ui": "^22.4.0"
+    "cozy-ui": "22.7.0"
   }
 }

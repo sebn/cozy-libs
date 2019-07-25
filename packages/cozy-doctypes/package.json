@@ -12,7 +12,7 @@
     "cozy-logger": "^1.4.0",
     "es6-promise-pool": "2.5.0",
     "lodash": "4.17.15",
-    "prop-types": "^15.7.2"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -21,7 +21,7 @@
     "cozy-client": "6.34.0",
     "cozy-client-js": "0.14.2",
     "jest": "24.1.0",
-    "mockdate": "^2.0.3"
+    "mockdate": "2.0.3"
   },
   "peerDependencies": {
     "cozy-client": "6.34.0"

@@ -7,6 +7,6 @@
   "author": "Cozy",
   "license": "MIT",
   "peerDependencies": {
-    "webpack": "^4.35.3"
+    "webpack": "4.37.0"
   }
 }
